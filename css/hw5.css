@@ -1,0 +1,172 @@
+/* 
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+Assignment : Scrabble Board Implementation
+File: hw5.css
+Description: This file consists of the css properties that help create 
+the visualization of the scrabble board. It has the rack, buttons, scrabble tiles, scrabble one
+line board and more features included in here that help create the image we see on though the html file.
+*/
+
+#header { /* gives the header that title look witht he help of boostrap*/
+    background-color: #8cc0af;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: #8cc0af;
+}
+
+.game_tile {
+    margin-right: 20px;
+    width:128px;
+    height:128px;
+}
+
+
+.board {
+    width:128px;
+    height:128px;
+}
+
+
+#rack { /* rack css that give the wooden rack look*/
+    margin-left: auto;
+    margin-right: auto;
+    width:1150px;
+    height:240px;
+    border-radius: 0px;
+}
+
+
+#rack_div {
+    position: relative;
+}
+
+
+#game_rack {
+    position: absolute;
+    bottom: 45px;
+    left: 75px;
+    margin-top: 0px;
+}
+
+
+img {
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 25px;
+}
+
+
+#board_div {
+    padding: 20px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: rgb(49, 32, 12);
+    width: 1139px;
+    border-radius: 0px;
+}
+
+
+
+#remainingTiles {
+    border-radius: 10px;
+    border-style: double;
+}
+
+
+table#remainingTiles td, table#remainingTiles tr  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    border-spacing: 20px;
+    background-color: rgb(223, 198, 198);
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    font-family: monospace;
+}
+
+
+#tabletitle {
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 198, 198);
+    font-family: monospace;
+
+}
+
+
+#container {
+    border-radius: 25px;
+    width: 50px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+}
+
+
+
+
+.buttonrow{
+    margin-left: 14px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 1140px;
+    border-radius: 0px;
+    padding: 0px;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+#new_tile { /*new tiles css*/
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    color: rgb(43, 22, 14);
+    background-color:beige;
+    font-family: monospace;
+}
+
+
+#reset { /* reset button css*/
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    color: rgb(43, 22, 14);
+    background-color: beige;
+    font-family: monospace;
+}
+
+#score { /*score button css*/
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    color: rgb(43, 22, 14);
+    background-color: beige;
+    font-family: monospace;
+}
+
+#instruction1 { /* css for the instructions on the page*/
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#instruction2 {
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 0px;
+}
