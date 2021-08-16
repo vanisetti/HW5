@@ -1,0 +1,69 @@
+﻿<!-- /* 
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+Assignment : Scrabble Board Implementation
+File: hw5.html
+Description: This is the html file that links the css and javascript to create a functioning scrabble
+ board (one line of it ). The goal of this asisgnment was to create a scrabble board that carries out 
+ the funciton of the game in terms of putting down tiles, keep score and maintaining an accurate 
+ count of the tiles so that it is a balanced game in terms of remaining tiles and etc.
+*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+
+    <!-- css and javascript -->
+    <script src="js/hw5.js"></script>
+    <link href="css/hw5.css" rel="stylesheet">
+</head>
+<body class= "idk">
+<div class="container">
+    <div class="container1" id = "container2">
+        <div class="jumbotron text-center" id = "header"> 
+            <h1>Scrabble</h1>
+            <p id = "instruction1">-->Use reset to start a new game</p>
+            <p id = "instruction2">-->Use new tiles to receive a fresh set of tiles</p>
+        </div>
+    </div>
+
+    <div class = "buttonrow"> <!-- Reset, New Tiles and Score -->
+        <button onclick="rack_build()" id="new_tile">New Tiles</button>
+        <button onclick="reset(), rack_build()" id="reset">Reset</button>
+        <button id ="score">Score:<span id="score_board">0</span></button>
+    </div>
+
+    <!--div breaking down a row into 8 individual parts for a row of tiles on the board-->
+    <div class="container" id="board_div">
+        <table>
+            <tr>
+                <td><img id="1" class="board" title="doubleLetter" src="img/Scrabble_Board_Double_Letter.JPG"></td>
+                <td><img id="2" class="board" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="3" class="board" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="4" class="board" title="tripleLetter" src="img/Scrabble_Board_Triple_Letter.JPG"></td>
+                <td><img id="5" class="board" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="6" class="board" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="7" class="board" title="blank" src="img/Scrabble_Board_Double_Letter.JPG"></td>
+                <td><img id="8" class="board" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container" id="rack_div"> <!-- Rack Implementation-->
+        <img id="rack" src="img/rack.png">
+        <div id="game_rack"></div>
+    </div>
+</div>
+</body>
+</html>
