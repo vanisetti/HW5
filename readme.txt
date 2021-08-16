@@ -2,6 +2,7 @@ Vijaya Anisetti
 HW 5 Scrabble Board
 
 Github Link: https://github.com/vanisetti/HW5
+Github Repo: https://github.com/vanisetti/HW5
 
 Hello.. So my program isn't entirely complete. It was harder than I anticipated and I wish we 
 could've had more time because it about to be fun. Here is what I wasn't able to fully accomplish:
