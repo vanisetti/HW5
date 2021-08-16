@@ -155,8 +155,12 @@ https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/Scrabble_Til
        }
    
        tile_exist[$(this).attr("id") -1 ] = true;
+
+       
    
        score_update();
+
+       $(this).draggable('disable');
    
    }
    
@@ -321,7 +325,7 @@ https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/Scrabble_Til
    }
    
 
-   
+
 /*
 
    function check_if_word_exists(word) {
@@ -338,7 +342,6 @@ https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/Scrabble_Til
 }
 
 */
-   
 
 
    //functions called 
@@ -347,10 +350,15 @@ https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/Scrabble_Til
        
        rack_build();
    
-       $(".board").droppable({ drop: dropped_tile, out:remove_tile});
-   
+       $(".board").droppable({  drop: dropped_tile}); /*,drop: dropped_tile, out:remove_tile */
+       /*function(event, ui){
+        $(this).draggable('disable');} */
+
        $(".buttonrow").droppable({ drop: tile_removed });
        $(".container1").droppable({ drop: tile_removed });
+       $(ui.draggable).css("top", "");
+       $(ui.draggable).css("left", "");
+       $(this).append(ui.draggable);
       /* $(".idk").droppable({ drop: tile_removed });*/
    
    });
